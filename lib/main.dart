@@ -12,16 +12,16 @@ runMainApp() async {
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({Key? key}) : super(key: key);
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Capek Ngoding',
+      title: '',
       navigatorKey: Get.navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: getDefaultTheme(),
-      home: DashboardView(),
+      home: const DashboardView(),
       builder: (context, child) => debugView(
         context: context,
         child: child,

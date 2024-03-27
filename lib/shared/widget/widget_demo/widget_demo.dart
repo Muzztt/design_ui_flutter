@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core.dart';
 
 class HUIWidgetDemoView extends StatefulWidget {
-  HUIWidgetDemoView({Key? key}) : super(key: key);
+  const HUIWidgetDemoView({super.key});
 
   @override
   State<HUIWidgetDemoView> createState() => _HUIWidgetDemoViewState();
@@ -15,10 +15,10 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Widget Demo"),
+        title: const Text("Widget Demo"),
         actions: [
           Container(
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             child: ElevatedButton(
               onPressed: () {
                 bool isValid = formKey.currentState!.validate();
@@ -26,14 +26,14 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                   return;
                 }
               },
-              child: Text("Check"),
+              child: const Text("Check"),
             ),
           ),
         ],
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(20.0),
           child: Form(
             key: formKey,
             child: Column(
@@ -60,7 +60,7 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                 QDropdownField(
                   label: "Roles",
                   validator: Validator.required,
-                  items: [
+                  items: const [
                     {
                       "label": "Admin",
                       "value": 1,
@@ -74,7 +74,7 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                 ),
                 QCategoryPicker(
                   label: "Category",
-                  items: [
+                  items: const [
                     {
                       "label": "Main Course",
                       "value": "Main Course",
@@ -111,7 +111,7 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                   label: "Favorite employee",
                   hint: "Your favorite Employee",
                   validator: Validator.required,
-                  items: [
+                  items: const [
                     {
                       "label": "Jackie Roo",
                       "value": "101",
@@ -168,7 +168,7 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                 QCheckField(
                   label: "Club",
                   validator: Validator.atLeastOneitem,
-                  items: [
+                  items: const [
                     {
                       "label": "Persib",
                       "value": 101,
@@ -186,7 +186,7 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                   label: "Gender",
                   hint: "Gender",
                   validator: Validator.atLeastOneitem,
-                  items: [
+                  items: const [
                     {
                       "label": "Female",
                       "value": 1,
@@ -201,7 +201,7 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                 QSwitch(
                   label: "Member",
                   validator: Validator.atLeastOneitem,
-                  items: [
+                  items: const [
                     {
                       "label": "Private",
                       "value": 1,

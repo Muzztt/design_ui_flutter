@@ -27,22 +27,22 @@ ThemeData getDefaultTheme() {
       labelColor: Colors.blueGrey[900]!,
     ),
     textTheme: TextTheme(
-      titleSmall: GoogleFonts.lato(
+      titleSmall: GoogleFonts.poppins(
         color: Colors.blueGrey[900],
       ),
-      titleMedium: GoogleFonts.lato(
+      titleMedium: GoogleFonts.poppins(
         color: Colors.blueGrey[900],
       ),
-      titleLarge: GoogleFonts.lato(
+      titleLarge: GoogleFonts.poppins(
         color: Colors.blueGrey[900],
       ),
-      bodyLarge: GoogleFonts.lato(
+      bodyLarge: GoogleFonts.poppins(
         color: Colors.blueGrey[900],
       ),
-      bodySmall: GoogleFonts.lato(
+      bodySmall: GoogleFonts.poppins(
         color: Colors.blueGrey[900],
       ),
-      bodyMedium: GoogleFonts.lato(
+      bodyMedium: GoogleFonts.poppins(
         color: Colors.blueGrey[900],
       ),
     ),
@@ -62,7 +62,7 @@ ThemeData getDefaultTheme() {
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8.0),
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: Colors.red,
         ),
       ),
@@ -73,7 +73,7 @@ ThemeData getDefaultTheme() {
         ),
       ),
       filled: true,
-      fillColor: Color(0xfffbfbfb),
+      fillColor: const Color(0xfffbfbfb),
     ),
   );
 }
