@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui_test_test/core.dart';
-import 'package:hyper_ui_test_test/dynamic_page/dynamic_page_login/dynamic_page.dart';
+import 'package:hyper_ui_test_test/dynamic_page/dynamic_page_login/dynamic_page_login.dart';
 import '../../../model/model_login.dart';
 import '../controller/dashboard_controller.dart';
 
