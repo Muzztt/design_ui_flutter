@@ -2,7 +2,17 @@
     "modules": [
         "dashboard",
         "main_navigation",
-        "login"
+        "login",
+        "signup/e_sign_up1_page",
+        "signup/e_sign_up2_page",
+        "signup/e_sign_up3_page",
+        "signup/e_sign_up4_page",
+        "signup/e_sign_up5_page",
+        "signup/e_sign_up6_page",
+        "signup/e_sign_up7_page",
+        "signup/e_sign_up8_page",
+        "signup/e_sign_up9_page",
+        "signup/e_sign_up10_page"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,

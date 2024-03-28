@@ -1,17 +1,18 @@
+// ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
-import 'package:hyper_ui_test_test/core.dart';
-import 'package:hyper_ui_test_test/dynamic_page/dynamic_page_login/dynamic_page_login.dart';
-import '../../../model/model_login.dart';
-import '../controller/dashboard_controller.dart';
 
-class DashboardView extends StatefulWidget {
-  const DashboardView({super.key});
+import '../../model/model_dynamic_page.dart';
+import '../dynamic_page.dart';
 
-  Widget build(context, DashboardController controller) {
-    controller.view = this;
+class DashboardDynamicPage extends StatelessWidget {
+  const DashboardDynamicPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashboard"),
+        title: const Text("Dashboard Dynamic Page"),
         actions: const [],
       ),
       body: SingleChildScrollView(
@@ -27,18 +28,17 @@ class DashboardView extends StatefulWidget {
                   mainAxisSpacing: 6,
                   crossAxisSpacing: 6,
                 ),
-                itemCount: items.length,
+                itemCount: itemsPage.length,
                 shrinkWrap: true,
                 physics: const ScrollPhysics(),
                 itemBuilder: (BuildContext context, int index) {
-                  final String label = items[index]["label"];
+                  final String label = itemsPage[index]["label"];
                   return GestureDetector(
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                DynamicPageLogin(label: label)),
+                            builder: (context) => DynamicPage(label: label)),
                       );
                     },
                     child: Container(
@@ -63,7 +63,4 @@ class DashboardView extends StatefulWidget {
       ),
     );
   }
-
-  @override
-  State<DashboardView> createState() => DashboardController();
 }

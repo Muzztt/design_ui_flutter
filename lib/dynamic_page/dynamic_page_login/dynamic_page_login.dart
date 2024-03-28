@@ -14,10 +14,10 @@ import '../../module/login/ELogin8_page.dart';
 import '../../module/login/ELogin9_page.dart';
 
 class DynamicPageLogin extends StatelessWidget {
-  final String label;
+  final String? label;
   const DynamicPageLogin({
     super.key,
-    required this.label,
+    this.label,
   });
 
   @override

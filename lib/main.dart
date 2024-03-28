@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
       navigatorKey: Get.navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: getDefaultTheme(),
-      home: const DashboardView(),
+      home: const DashboardDynamicPage(),
       builder: (context, child) => debugView(
         context: context,
         child: child,

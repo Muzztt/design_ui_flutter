@@ -1,18 +1,15 @@
-import 'package:flutter/material.dart';
-
-List<Map<String, dynamic>> itemsLogin = [
+List<Map<String, dynamic>> itemsPage = [
   {
-    "label": "ELogin1",
-    "icon": Icons.login,
+    "label": "ELogin",
   },
   {
-    "label": "ELogin2",
+    "label": "ESignUp",
   },
   {
-    "label": "ELogin3",
+    "label": "EDashboard",
   },
   {
-    "label": "ELogin4",
+    "label": "EList",
   },
   {
     "label": "ELogin5",

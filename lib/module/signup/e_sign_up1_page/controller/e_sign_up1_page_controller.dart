@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui_test_test/core.dart';
-import '../view/dashboard_view.dart';
+import '../view/e_sign_up1_page_view.dart';
 
-class DashboardController extends State<DashboardView> {
-  static late DashboardController instance;
-  late DashboardView view;
+class ESignUp1PageController extends State<ESignUp1PageView> {
+  static late ESignUp1PageController instance;
+  late ESignUp1PageView view;
 
   @override
   void initState() {
